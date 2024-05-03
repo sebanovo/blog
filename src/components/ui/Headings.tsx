@@ -11,7 +11,7 @@ interface Props extends HeadingProps {
   type?: 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6'
 }
 
-export function Heading({ id, children, type, ...rest }: Props): JSX.Element {
+export function Heading({ id, children, type, ...rest }: Props) {
   const [isShow, setIsShown] = useState(false)
   const HeadingTag = type || 'h1' 
   return (

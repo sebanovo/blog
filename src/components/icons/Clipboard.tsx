@@ -1,4 +1,4 @@
-export default function ClipBoard(props: React.SVGProps<SVGSVGElement>): JSX.Element {
+export default function ClipBoard(props: React.SVGProps<SVGSVGElement>) {
   return (
     <svg
       className={`p-[3px] stroke-[1.5]`}

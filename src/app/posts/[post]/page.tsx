@@ -89,7 +89,7 @@ export default function Page({ params }: Props) {
         options={{
           parseFrontmatter: true,
           mdxOptions: {
-            development: true,
+            development: process.env.NODE_ENV === 'development',
             remarkPlugins: [remarkGfm],
             rehypePlugins: [rehypeSlug, [rehypePrettyCode as any, options]]
           }
