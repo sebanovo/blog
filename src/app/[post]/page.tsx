@@ -1,4 +1,4 @@
-import { getPostContent } from '@/lib/postsData'
+import { getPostContent, getPostList } from '@/lib/postsData'
 import { MDXRemote } from 'next-mdx-remote/rsc'
 import remarkGfm from 'remark-gfm'
 import rehypePrettyCode, { Options } from 'rehype-pretty-code'
@@ -44,6 +44,14 @@ const DefaultCode: React.FC<CodeProps> = (props, p) => {
       className='before:content-none after:content-none p-1 rounded-md '
     ></code>
   )
+}
+
+export async function generateStaticParams() {
+  return getPostList().map(value => {
+    return {
+      post: value
+    }
+  })
 }
 
 export default function Page({ params }: Props) {

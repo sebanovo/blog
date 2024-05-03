@@ -8,8 +8,6 @@ export function Navbar({ ...rest }) {
         <ul className='flex justify-between items-center mx-4 gap-5'>
           <ThemeSwitcher />
           <Link href='/' className='text-white'>Layout</Link>
-          <Link href='/posts' className='text-white'>Posts</Link>
-          <Link href='/nose' className='text-white'>Nose</Link>
         </ul>
       </div>
     </nav>

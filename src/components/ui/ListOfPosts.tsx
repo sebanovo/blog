@@ -10,7 +10,7 @@ export default function ListOfPosts() {
         return (
           <Link
             key={id}
-            href={`posts/${id}`}
+            href={`/${id}`}
             className='px-2 dark:border-b-blue-600 border-b-2 w-full flex items-center py-3 justify-between dark:hover:bg-slate-950 dark:bg-transparent dark:hover:text-white dark:text-blue-600 border-zinc-800 text-black hover:text-blue-600 hover:border-b-blue-600'
           >
             <div className='flex items-center'>
