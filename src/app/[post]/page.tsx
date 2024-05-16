@@ -41,7 +41,7 @@ const DefaultCode: React.FC<CodeProps> = (props, p) => {
   return (
     <code
       {...props}
-      className='before:content-none after:content-none p-1 rounded-md '
+      className='before:content-none after:content-none rounded-md '
     ></code>
   )
 }
@@ -63,6 +63,7 @@ export default function Page({ params }: Props) {
       px-7
       mx-auto
       prose 
+      prose-blockquote:border-cyan-800
       dark:prose-headings:text-white
       dark:prose-strong:text-white 
       dark:prose-p:text-white 

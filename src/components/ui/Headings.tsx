@@ -17,7 +17,7 @@ export function Heading({ id, children, type, ...rest }: Props) {
   return (
     <HeadingTag
       id={id}
-      className='w-full flex items-center text-center relative cursor-pointer'
+      className='w-full flex items-center relative cursor-pointer'
       onMouseEnter={() => setIsShown(true)}
       onMouseLeave={() => setIsShown(false)}
       {...rest}
